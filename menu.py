@@ -1,9 +1,8 @@
 from nodeclass import Node
 from chord import hashlib
-import linecache
 import sys
-import os
 from fun import * 
+
 def menu():
     print("------------------- Menu: -------------------\n")
     print("1 --> ADD node & Key\n")
@@ -36,20 +35,28 @@ def main():
             enableprint()
             print('node added: {}'.format(num))
 
+
         elif choise == '2':
             delete=input("give the id of the node:")
             #delete func
         
+
+
         elif choise == '3':
             print("\n\n\n")
             for item in sortli:
                 print("Node:{}".format(item))
                 
+
+
         elif choise == '4':
             for item in sortlist:
                 print(item.predecessor,end ='\t')
                 print(item, end='\t')
                 print(item.succesor)
+
+
+
 
         elif choise == '5':
             nodeval = int(input("give the node number you'd ou like to find"))
@@ -57,14 +64,22 @@ def main():
             find = int(hash(keyval,ring_size))
             #searching func
 
+
+
+
         elif choise == '6':
              print("your ring now is:\n")
              for item in sortli:
                  print("values of node {} are:".format(item.id))
                  print(item.Nodevalues)    
 
+
+
         elif(choise == '7'):
            sys.exit("bye!")
+
+
+
 
 
 
