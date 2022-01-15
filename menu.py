@@ -1,5 +1,5 @@
 from nodeclass import Node
-from chord import hashlib
+from hashfunc import hashlib
 import sys
 from fun import * 
 
@@ -78,10 +78,10 @@ def main():
         elif(choise == '7'):
            sys.exit("bye!")
 
+
         else:
             print("Give valid input")
             continue
-
 
 
 
