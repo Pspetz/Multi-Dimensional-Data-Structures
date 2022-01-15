@@ -78,7 +78,9 @@ def main():
         elif(choise == '7'):
            sys.exit("bye!")
 
-
+        else:
+            print("Give valid input")
+            continue
 
 
 
